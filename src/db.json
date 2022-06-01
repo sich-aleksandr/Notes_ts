@@ -1,0 +1,23 @@
+{
+	"notes": [{
+			"id": 1,
+			"text": "Rembaud"
+		},
+		{
+			"id": 2,
+			"text": "some 2"
+		},
+		{
+			"id": 3,
+			"text": "some 3"
+		},
+		{
+			"id": 4,
+			"text": "some text4"
+		}
+	],
+	"tags": [
+		"some",
+		"text"
+	]
+}

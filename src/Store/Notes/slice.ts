@@ -2,9 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { getRandomInt } from "../../Utils/utils";
 import Data from "../../db.json"
 
-        const array = JSON.parse(JSON.stringify(Data))
-        console.log(array.notes);
-
+  const array = JSON.parse(JSON.stringify(Data))
       
 export interface State {
   notes: {
@@ -29,6 +27,18 @@ export const { actions, reducer } = createSlice({
         ...state,
         notes: state.notes.filter((note) => note.id !== action.payload),
       };
+    },
+    editNote: (
+      state,
+      action: PayloadAction<{id:number, text:string}>
+    ) => {
+      return {
+        ...state,
+        notes: state.notes.map((note) =>
+          note.id === action.payload.id ? {...note, text: action.payload.text} : note
+        )
+      };
+
     },
     addNote: (state, action: PayloadAction<string>) => {
       const newItem = {

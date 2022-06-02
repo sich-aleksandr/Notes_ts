@@ -1,19 +1,19 @@
 {
 	"notes": [{
 			"id": 1,
-			"text": "Rembaud"
+			"text": "Lorem ipsum dolor sit #amet"
 		},
 		{
 			"id": 2,
-			"text": "some 2"
+			"text": "consectetur adipiscing elit"
 		},
 		{
 			"id": 3,
-			"text": "some 3"
+			"text": "Vestibulum sem #quam"
 		},
 		{
 			"id": 4,
-			"text": "some text4"
+			"text": "In malesuada purus vitae sem"
 		}
 	],
 	"tags": [
